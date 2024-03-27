@@ -2,6 +2,7 @@
 const { chromium, test } = require("@playwright/test");
 import { LoginPage } from "../pages/loginpage";
 import { ProductPage } from "../pages/productpage";
+import { ShopByCategory } from "../pages/shopbycategory";
 
 let browser;
 let context;
@@ -19,53 +20,25 @@ test("Login to Lamdatest", async () => {
     await loginPage.navigateToLogin();
     await loginPage.fillLoginDetails();
     console.log("========== login successful=============");
+
+    await loginPage.lamdalogout();
+    console.log("=========== logout successful=============");
 });
 
 test("Select product on Lamdatest after login", async () => {
     const productPage = new ProductPage(page);
-
-    // Assuming login is already performed
-    // If not, you can add the necessary login steps here
-
     await page.goto("https://ecommerce-playground.lambdatest.io/");
-    console.log("========== continue with logged-in session ===========");
-
     await productPage.navigateToSamsungProduct();
     await productPage.selectProduct();
+    await productPage.paymentDetails();
+    await productPage.billingAdress();
 });
+test("shop by category options", async()=>{
+    const shopbyCategory= new ShopByCategory(page);
+    await page.goto("https://ecommerce-playground.lambdatest.io/");
+    shopbyCategory.navigateToShop();
+    shopbyCategory.selectCameraProduct();
+    // // shopbyCategory.writeReview();
 
-
-// test("mega menu operations", async({page})=>{
-//     // browser= await chromium.launch();
-//     // context= await browser.newContext();
-//     // page= await context.newPage();
-//     // const megaMenuPage= new MegaMenuPage(page);
-
-
-//     // await page.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/account");
-//     // const megaMenuItem = await page.waitForSelector("//span[normalize-space(text())='Mega Menu']", { timeout: 10000 });
-//     // await megaMenuItem.hover();
-
-//     // await page.waitForTimeout(2000);
-//     // const mobileCasesItem = await page.waitForSelector("//a[contains(text(),'Mobile cases')]", { timeout: 5000 });
-//     // await mobileCasesItem.click();
-//     megaMenuPage.navigateToMenu();
-//     megaMenuPage.searchProduct();
-//     console.log("=================hovered===================")
-
-// })
-
-// test('amazon login', async()=>{
-//     const amazonpage= new AmazonLoginPage(page);
-//     amazonpage.navigateToSignIn();
-//     amazonpage.signIn();
-
-// })
-
-// test.afterAll("browser closed", async()=>{
-//     await browser.close();
-// })
-// test.afterAll("browser close",async()=>{
-   
-//   await page.close();
-// })
+    // await page.close()
+});

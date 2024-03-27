@@ -80,7 +80,7 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 9658,
+                  "duration": 10742,
                   "errors": [],
                   "stdout": [
                     {
@@ -88,11 +88,17 @@
                     },
                     {
                       "text": "========== login successful=============\n"
+                    },
+                    {
+                      "text": "------logout successfully------\n"
+                    },
+                    {
+                      "text": "=========== logout successful=============\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-03-27T04:06:07.824Z",
+                  "startTime": "2024-03-27T11:57:59.790Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -112,7 +118,7 @@
           ],
           "id": "ef85df6096d4739f2c52-976f0879479ea72040fc",
           "file": "tests/login.test.ts",
-          "line": 16,
+          "line": 17,
           "column": 1
         },
         {
@@ -130,16 +136,16 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 33535,
+                  "duration": 21644,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "========== continue with logged-in session ===========\n"
+                      "text": "------------------ { x: \u001b[33m583.421875\u001b[39m, y: \u001b[33m88.1875\u001b[39m, width: \u001b[33m85.359375\u001b[39m, height: \u001b[33m23.6875\u001b[39m }\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-03-27T04:06:19.086Z",
+                  "startTime": "2024-03-27T11:58:11.413Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -154,7 +160,45 @@
           ],
           "id": "ef85df6096d4739f2c52-0b95e684b4bfb17e59f1",
           "file": "tests/login.test.ts",
-          "line": 24,
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "shop by category options",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1711,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-03-27T11:58:33.059Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shirisha.mannem\\OneDrive - Feuji Software Solutions Pvt Ltd\\Documents\\Playwright Related\\PlaywrightTypescript\\test-results\\tests-login-shop-by-category-options\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ef85df6096d4739f2c52-d0c28bcfef693a445229",
+          "file": "tests/login.test.ts",
+          "line": 36,
           "column": 1
         }
       ]
@@ -162,9 +206,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-03-27T04:06:07.040Z",
-    "duration": 46133.327,
-    "expected": 2,
+    "startTime": "2024-03-27T11:57:59.067Z",
+    "duration": 36136.284,
+    "expected": 3,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
