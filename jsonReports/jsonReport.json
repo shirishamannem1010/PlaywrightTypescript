@@ -1,0 +1,172 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\shirisha.mannem\\OneDrive - Feuji Software Solutions Pvt Ltd\\Documents\\Playwright Related\\PlaywrightTypescript\\playwright.config.ts",
+    "rootDir": "C:/Users/shirisha.mannem/OneDrive - Feuji Software Solutions Pvt Ltd/Documents/Playwright Related/PlaywrightTypescript",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "on-failure"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/shirisha.mannem/OneDrive - Feuji Software Solutions Pvt Ltd/Documents/Playwright Related/PlaywrightTypescript/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/shirisha.mannem/OneDrive - Feuji Software Solutions Pvt Ltd/Documents/Playwright Related/PlaywrightTypescript",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/login.test.ts"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.42.1",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\login.test.ts",
+      "file": "tests/login.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Login to Lamdatest",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 9658,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "==== page url : ============= https://ecommerce-playground.lambdatest.io/index.php?route=account/account\n"
+                    },
+                    {
+                      "text": "========== login successful=============\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-03-27T04:06:07.824Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shirisha.mannem\\OneDrive - Feuji Software Solutions Pvt Ltd\\Documents\\Playwright Related\\PlaywrightTypescript\\test-results\\tests-login-Login-to-Lamdatest\\test-finished-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shirisha.mannem\\OneDrive - Feuji Software Solutions Pvt Ltd\\Documents\\Playwright Related\\PlaywrightTypescript\\test-results\\tests-login-Login-to-Lamdatest\\test-finished-2.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ef85df6096d4739f2c52-976f0879479ea72040fc",
+          "file": "tests/login.test.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "Select product on Lamdatest after login",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 33535,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "========== continue with logged-in session ===========\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-03-27T04:06:19.086Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shirisha.mannem\\OneDrive - Feuji Software Solutions Pvt Ltd\\Documents\\Playwright Related\\PlaywrightTypescript\\test-results\\tests-login-Select-product-on-Lamdatest-after-login\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ef85df6096d4739f2c52-0b95e684b4bfb17e59f1",
+          "file": "tests/login.test.ts",
+          "line": 24,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-03-27T04:06:07.040Z",
+    "duration": 46133.327,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
